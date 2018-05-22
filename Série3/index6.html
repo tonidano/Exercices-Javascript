@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 6</title>
+  </head>
+  <body>
+    <img src="./image1.jpg" id="image1" onmouseover="imageChange()" onmouseout="imageReturn()"/>
+    <img src="./image2.jpg" id="image2" onmouseover="imageChange()" onmouseout="imageReturn()"/>
+    <img src="./image3.jpg" id="image3" onmouseover="imageChange()" onmouseout="imageReturn()"/>
+    <img src="./image4.jpg" id="image4" onmouseover="imageChange()" onmouseout="imageReturn()"/>
+    <img src="./image5.jpg" id="image5" onmouseover="imageChange()" onmouseout="imageReturn()"/>
+    <script type="text/javascript">
+      function imageChange() {
+        document.getElementById('image1').src='./image1_2.jpg';
+        document.getElementById('image2').src='./image2_2.jpg';
+        document.getElementById('image3').src='./image3_2.jpg';
+        document.getElementById('image4').src='./image4_2.jpg';
+        document.getElementById('image5').src='./image5_2.jpg';
+
+      };
+
+      function imageReturn() {
+        document.getElementById('image1').src='./image1.jpg';
+        document.getElementById('image2').src='./image2.jpg';
+        document.getElementById('image3').src='./image3.jpg';
+        document.getElementById('image4').src='./image4.jpg';
+        document.getElementById('image5').src='./image5.jpg';
+
+      };
+    </script>
+  </body>
+</html>
