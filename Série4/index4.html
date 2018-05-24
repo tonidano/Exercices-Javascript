@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <label for="motdepasse">Votre mot de passe : </label><input type="text" name="motdepasse" value="" id="motdepasse" />
+    <label for="confirmation">Confirmez : </label><input type="text" name="confirmation" value="" id="confirmation" />
+    <button type="button" name="button" onclick="bordure()">Vérification</button>
+  </form>
+
+  <script>
+  function bordure()
+  {
+  var champA = document.getElementById("motdepasse").value;
+  var champB = document.getElementById("confirmation").value;
+
+  if(champA == champB)
+  {
+  document.getElementById("confirmation").style.border = "solid green";
+  document.getElementById("motdepasse").style.border = "solid green";
+  }
+  else
+  {
+  document.getElementById("motdepasse").style.border = "solid red";
+  document.getElementById("confirmation").style.border = "solid red";
+  }
+  }
+
+  </script>
+</body>
+</html>
